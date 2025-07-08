@@ -332,8 +332,8 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-          "99loli": "https://links.1308892875.workers.dev/99loli",
           "v1.mk": "https://v1.mk/short",
+          "99loli": "https://links.1308892875.workers.dev/99loli",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "suo.yt": "https://suo.yt/short",
@@ -341,8 +341,8 @@ export default {
         customBackend: {
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
-          "默认后端": "https://psub.1308892875.workers.dev",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
+          "默认后端": "https://psub.1308892875.workers.dev",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           nameless13提供: "https://www.nameless13.com",
           subconverter作者提供: "https://sub.xeton.dev",
