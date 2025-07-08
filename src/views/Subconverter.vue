@@ -33,7 +33,7 @@
                 </el-select>
               </el-form-item>
               <el-form-item label="短链选择:">
-                <el-select v-model="form.shortType" allow-create filterable placeholder="https://links.1308892875.workers.dev"
+                <el-select v-model="form.shortType" allow-create filterable placeholder="https://links.1308892875.workers.dev/short"
                   style="width: 100%">
                   <el-option v-for="(v, k) in options.shortTypes" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
