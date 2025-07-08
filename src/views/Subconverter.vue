@@ -28,12 +28,12 @@
               </el-form-item>
               <el-form-item label="后端地址:">
                 <el-select v-model="form.customBackend" allow-create filterable @change="selectChanged"
-                  placeholder="可输入自己的后端" style="width: 100%">
+                  placeholder="https://psub.1308892875.workers.dev" style="width: 100%">
                   <el-option v-for="(v, k) in options.customBackend" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
               </el-form-item>
               <el-form-item label="短链选择:">
-                <el-select v-model="form.shortType" allow-create filterable placeholder="可输入其他可用短链API"
+                <el-select v-model="form.shortType" allow-create filterable placeholder="https://links.1308892875.workers.dev/99loli"
                   style="width: 100%">
                   <el-option v-for="(v, k) in options.shortTypes" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
