@@ -332,7 +332,7 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-          "v1.mk": "https://links.1308892875.workers.dev/99loli",
+          "99loli": "https://links.1308892875.workers.dev/99loli",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
