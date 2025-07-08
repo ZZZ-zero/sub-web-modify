@@ -28,12 +28,12 @@
               </el-form-item>
               <el-form-item label="后端地址:">
                 <el-select v-model="form.customBackend" allow-create filterable @change="selectChanged"
-                  placeholder="默认后端" style="width: 100%">
+                  placeholder="可输入自己的后端" style="width: 100%">
                   <el-option v-for="(v, k) in options.customBackend" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
               </el-form-item>
               <el-form-item label="短链选择:">
-                <el-select v-model="form.shortType" allow-create filterable placeholder="99loli"
+                <el-select v-model="form.shortType" allow-create filterable placeholder="可输入其他可用短链API"
                   style="width: 100%">
                   <el-option v-for="(v, k) in options.shortTypes" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
@@ -333,7 +333,6 @@ export default {
         },
         shortTypes: {
           "v1.mk": "https://v1.mk/short",
-          "99loli": "https://links.1308892875.workers.dev/99loli",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "suo.yt": "https://suo.yt/short",
@@ -342,7 +341,6 @@ export default {
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
-          "默认后端": "https://psub.1308892875.workers.dev",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           nameless13提供: "https://www.nameless13.com",
           subconverter作者提供: "https://sub.xeton.dev",
@@ -351,7 +349,6 @@ export default {
         backendOptions: [
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
-          { value: "https://psub.1308892875.workers.dev" },
           { value: "https://url.v1.mk" },
           { value: "https://sub.d1.mk" },
           { value: "https://www.nameless13.com" },
@@ -789,8 +786,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://links.1308892875.workers.dev/99loli" : this.getUrlParam(),
-        shortType: "https://links.1308892875.workers.dev/99loli",
+        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
