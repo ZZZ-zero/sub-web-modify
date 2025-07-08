@@ -292,7 +292,7 @@ const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG
 const scriptConfigSample = process.env.VUE_APP_SCRIPT_CONFIG
 const filterConfigSample = process.env.VUE_APP_FILTER_CONFIG
 const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND
-const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
+const shortUrlBackend = 'https://links.1308892875.workers.dev/short'
 const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/sub.php'
 const basicVideo = process.env.VUE_APP_BASIC_VIDEO
 const advancedVideo = process.env.VUE_APP_ADVANCED_VIDEO
@@ -332,6 +332,7 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
+          "Primary": "https://links.1308892875.workers.dev/short",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
@@ -341,7 +342,7 @@ export default {
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
-          "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
+          "肥羊备用后端【vless网络】": "https://sub.d1.mk",
           nameless13提供: "https://www.nameless13.com",
           subconverter作者提供: "https://sub.xeton.dev",
           "sub-web作者提供": "https://api.wcc.best",
@@ -385,7 +386,7 @@ export default {
               },
               {
                 label: "CM_Online_Full_MultiMode_CF 识别多地区、CloudFlareCDN 负载均衡 Worker节点专用(与Github同步)",
-                value: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode_CF.ini"
+                value: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.html"
               }
             ]
           },
@@ -410,7 +411,7 @@ export default {
               },
               {
                 label: "ACL_全分组 Dream修改版",
-                value: "https://raw.githubusercontent.com/WC-Dream/ACL4SSR/WD/Clash/config/ACL4SSR_Online_Full_Dream.ini"
+                value: "https://raw.githubusercontent.com/WC-Dreamash/ACL-WD/Clash/config/ACL4SSR_Online_Full_Dream.ini"
               },
               {
                 label: "ACL_精简分组 Dream修改版",
@@ -528,8 +529,7 @@ export default {
                 value: "https://raw.githubusercontent.com/OoHHHHHHH/ini/master/cfw-tap.ini"
               },
               {
-                label: "lhl77全分组（定期更新）",
-                value: "https://raw.githubusercontent.com/lhl77/sub-ini/main/tsutsu-full.ini"
+                label: "https://raw.githubusercontent.com/lhl77/sub-ini/main/tsutsu-full.ini"
               },
               {
                 label: "lhl77简易版（定期更新）",
@@ -541,19 +541,19 @@ export default {
               },
               {
                 label: "ConnersHua 神机规则 Inbound 回国专用",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/connershua_backtocn.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/connershua_backtocn.ini"
               },
               {
                 label: "lhie1 洞主规则（使用 Clash 分组规则）",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_clash.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/lhie1_clash.ini"
               },
               {
                 label: "lhie1 洞主规则完整版",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_dler.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/lhie1_dler.ini"
               },
               {
                 label: "eHpo1 规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/ehpo1_main.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/ehpo1_main.ini"
               },
               {
                 label: "多策略组默认白名单模式",
@@ -597,23 +597,23 @@ export default {
               },
               {
                 label: "nzw9314 规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/nzw9314_custom.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/nzw9314_custom.ini"
               },
               {
                 label: "maicoo-l 规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/maicoo-l_custom.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/maicoo-l_custom.ini"
               },
               {
                 label: "DlerCloud Platinum 李哥定制规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_platinum.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/dlercloud_lige_platinum.ini"
               },
               {
                 label: "DlerCloud Gold 李哥定制规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_gold.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/dlercloud_lige_gold.ini"
               },
               {
                 label: "DlerCloud Silver 李哥定制规则",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_silver.ini"
+                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652/raw/dlercloud_lige_silver.ini"
               },
               {
                 label: "ProxyStorage自用",
@@ -631,7 +631,7 @@ export default {
               {
                 label: "EXFLUX",
                 value:
-                  "https://gist.github.com/jklolixxs/16964c46bad1821c70fa97109fd6faa2/raw/EXFLUX.ini"
+                  "https://gist.github.com/jklolixxs/16964c46bad1821c70fa97109d2715b/raw/EXFLUX.ini"
               },
               {
                 label: "NaNoport",
@@ -646,12 +646,12 @@ export default {
               {
                 label: "BigAirport",
                 value:
-                  "https://gist.github.com/jklolixxs/e2b0105c8be6023f3941816509a4c453/raw/BigAirport.ini"
+                  "https://gist.github.com/jklolixxs/e2b0105c8be6023e9a1b08fd02e00/raw/BigAirport.ini"
               },
               {
                 label: "跑路云",
                 value:
-                  "https://gist.github.com/jklolixxs/9f6989137a2cfcc138c6da4bd4e4cbfc/raw/PaoLuCloud.ini"
+                  "https://gist.github.com/jklolixxs/9f6989137a2cfcc138c6da4bd4e4c/raw/PaoLuCloud.ini"
               },
               {
                 label: "WaveCloud",
@@ -661,22 +661,22 @@ export default {
               {
                 label: "几鸡",
                 value:
-                  "https://gist.github.com/jklolixxs/bfd5061dceeef85e84401482f5c92e42/raw/JiJi.ini"
+                  "https://gist.github.com/jklolixxs/bfd5061ceeef84401482e844f5c92e/raw/JiJi.ini"
               },
               {
                 label: "四季加速",
                 value:
-                  "https://gist.github.com/jklolixxs/6ff6e7658033e9b535e24ade072cf374/raw/SJ.ini"
+                  "https://gist.github.com/jklolixxs/6ff6e7658033e9b535e24e072cf374/raw/SJ.ini"
               },
               {
                 label: "ImmTelecom",
                 value:
-                  "https://gist.github.com/jklolixxs/24f4f58bb646ee2c625803eb916fe36d/raw/ImmTelecom.ini"
+                  "https://gist.github.com/jklolixs/24f4f58bb646ee2e625803eb916fe36d/raw/ImmTelecom.ini"
               },
               {
                 label: "AmyTelecom",
                 value:
-                  "https://gist.github.com/jklolixxs/b53d315cd1cede23af83322c26ce34ec/raw/AmyTelecom.ini"
+                  "https://gist.github.com/jklolixxs/b53d315cd1e23af833b22c26ce34ec/raw/AmyTelecom.ini"
               },
               {
                 label: "LinkCube",
@@ -686,17 +686,17 @@ export default {
               {
                 label: "Miaona",
                 value:
-                  "https://gist.github.com/jklolixxs/ff8ddbf2526cafa568d064006a7008e7/raw/Miaona.ini"
+                  "https://gist.github.com/jklolixxs/ff8bdbf2526cafa568d064006a7008/raw/Miaona.ini"
               },
               {
                 label: "Foo&Friends",
                 value:
-                  "https://gist.github.com/jklolixxs/df8fda1aa225db44e70c8ac0978a3da4/raw/Foo&Friends.ini"
+                  "https://gist.github.com/jklolixxs/df8feda1ae225db44e70c8ac0978a3da/raw/Foo&Friends.ini"
               },
               {
                 label: "ABCloud",
                 value:
-                  "https://gist.github.com/jklolixxs/b1f91606165b1df82e5481b08fd02e00/raw/ABCloud.ini"
+                  "https://gist.github.com/jklolixxs/b1f91606165b1df82e84581b08fd0e00/raw/ABCloud.ini"
               },
               {
                 label: "咸鱼",
@@ -756,11 +756,11 @@ export default {
               },
               {
                 label: "N3RO",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/n3ro_optimized.ini"
+                value: "https://gist.github.com/tindy2013/1fa08640a9088ac8652/raw/n3ro_optimized.ini"
               },
               {
                 label: "Scholar",
-                value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/scholar_optimized.ini"
+                value: "https://gist.github.com/tindy2013/1fa08640a9088ac8652/raw/scholar_optimized.ini"
               },
               {
                 label: "Flowercloud",
@@ -886,7 +886,7 @@ export default {
           document.getElementsByTagName('body')[0].setAttribute('class', 'dark-mode');
         } else {
           document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
-        } //根据当前时间来判断，用来对付QQ等不支持媒体变量查询的浏览器
+        } //根据当前时间来判断，用来对付QQ等不支持媒体查询的浏览器
         if (lightMode && lightMode.matches) {
           document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
         }
@@ -903,11 +903,11 @@ export default {
       }
       if (zhuti === 'dark-mode') {
         document.getElementsByTagName('body')[0].setAttribute('class', 'light-mode');
-        window.localStorage.setItem('localTheme', 'light-mode');
+        window.localStorage.setItem('localTheme', Light-mode');
       }
     },
     tanchuang() {
-      this.$alert(`<div style="text-align:center;font-size:15px"><strong><span style="font-size:20px;color:red">apiurl.v1.mk已被蔷，请更换最新的url.v1.mk</span></strong></br><strong><span style="font-size:20px">本站官方TG交流群：</span><span><a href="https://t.me/feiyangdigital" target="_blank" style="color:red;font-size:20px;text-decoration:none">点击加入</a></span></strong></br><strong><span style="font-size:20px">IEPL高端机场（<span style="color:blue">原生支持奈飞非自制剧、Disney Plus、HBO等各种流媒体，支持Chat-GPT和ISP住宅IP助力Tiktok等跨境贸易使用</span>）：</span><span><a href="https://www.mcwy.org" style="color:red;font-size:20px;text-decoration:none">点击注册</a></span></strong></br><strong><span style="font-size:20px">奈飞、ChatGPT合租（<span style="color:blue">优惠码：feiyang</span>）：</span><span><a href="https://hezu.v1.mk/" style="color:red;font-size:20px;text-decoration:none">点击上车</a></span></strong></br><strong><span style="font-size:20px">115蓝光4K原盘内部资源群：</span><span><a href="https://115.metshop.top" target="_blank" style="color:red;font-size:20px;text-decoration:none">点击查看</a></span></strong></br>本站服务器赞助机场-牧场物语，是一家拥有BGP中继+IEPL企业级内网专线的高端机场，适合各个价位要求的用户，牧场物语采用最新的奈飞非自制剧解决方案，出口随机更换IP，确保尽可能的每个用户可以用上独立IP，以此来稳定解决奈飞非自制剧的封锁，并推出7*24小时奈飞非自制剧节点自动检测系统，用户再也不用自己手动一个个的乱试节点了，目前牧场的新加坡，台湾等节区域点均可做到24H稳定非自制剧观看，支持Chat-GPT和ISP住宅IP助力Tiktok等跨境贸易使用！</br></div>`, '信息面板', {
+      this.$alert(`<div style="text-align:center;font-size:15px"><strong><span style="font-size:20px;color:red">apiurl.v1.mk已被蔷，请更换最新的url.v1</span></strong></br><strong><span style="font-size:20px">本站官方TG交流群：</span><span><a href="https://t.me/feiyangdigital" target="_blank" style="color:red;font-size:20px;text-decoration:none">点击加入</a></span></strong></br><strong><span style="font-size:20px">IEPL高端机场（<span style="color:blue">原生支持奈飞非自制剧、Disney Plus、HBO等各种流媒体，支持Chat-GPT和ISP住宅IP助力Tiktok等跨境贸易使用</span>）：</span><span><a href="https://www.mcwy.org" style="color:red;font-size:20px;text-decoration:none">点击注册</a></span></strong></br><strong><span style="font-size:20px">奈飞、ChatGPT合租（<span style="color:blue">优惠码：feiyang</span>）：</span><span><a href="https://hezu.v1.mk/" style="color:red;font-size:20px;text-decoration:none">点击上车</a></span></strong></br><strong><span style="font-size:20px">115蓝光4K原盘内部资源群：</span><span><a href="https://115.metshop.top" target="_blank" style="color:red;font-size:20px;text-decoration:none">点击查看</a></span></strong></br>本站服务器赞助机场-牧场物语，是一家拥有BGP中继+IEPL企业级内网专线的高端机场，适合各个价位要求的用户，牧场物语采用最新的奈飞非自制剧解决方案，出口随机更换IP，确保尽可能的每个用户可以用上独立IP，以此来稳定解决奈飞非自制剧的封锁，并推出7*24小时奈飞非自制剧节点自动检测系统，用户再也不用自己手动一个个的乱试节点了，目前牧场的新加坡，台湾等节点区域点均可做到24H稳定非自制剧观看，支持Chat-GPT和ISP住宅IP助力Tiktok等跨境贸易使用！</br></div>`, '信息面板', {
         confirmButtonText: '确定',
         dangerouslyUseHTMLString: true,
         customClass: 'msgbox'
