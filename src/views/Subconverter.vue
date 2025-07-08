@@ -351,6 +351,7 @@ export default {
         backendOptions: [
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
+          { value: "https://psub.1308892875.workers.dev" },
           { value: "https://url.v1.mk" },
           { value: "https://sub.d1.mk" },
           { value: "https://www.nameless13.com" },
@@ -788,8 +789,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
+        customBackend: this.getUrlParam() == "" ? "https://links.1308892875.workers.dev/99loli" : this.getUrlParam(),
+        shortType: "https://links.1308892875.workers.dev/99loli",
         remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
